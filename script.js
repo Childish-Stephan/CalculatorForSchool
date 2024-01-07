@@ -9,7 +9,7 @@ function forceBesidesNinetyDegrees() {
     var fOne = document.getElementById('fOne').value;
     var fTwo = document.getElementById('fTwo').value;
     var cosDegrees = document.getElementById('cosDegrees').value;
-    var firstResult = [(((Math.pow(Number(fOne), 2)) + (Math.pow(Number(fTwo), 2))) + (2 * Number(fOne) * Number(fTwo) * Math.cos(Number(cosDegrees))))];
+    var firstResult = [(((Math.pow(Number(fOne), 2)) + (Math.pow(Number(fTwo), 2))) + (2 * Number(fOne) * Number(fTwo) * Math.cos(Number(cosDegrees)* Math.PI / 180)))];
     var finalResult = Math.sqrt(firstResult);
     roundedResult = finalResult.toFixed(2);
     document.getElementById("forceBesidesNinetyDegreesAnswer").innerHTML = roundedResult;
