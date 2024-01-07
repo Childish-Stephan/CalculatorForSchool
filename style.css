@@ -1,0 +1,20 @@
+.mainDiv {
+
+background-color: rgb(255, 253, 200);
+color: rgb(170, 103, 103);
+text-align: center;
+border: 5px solid rgb(230, 227, 158) ;
+
+}
+
+.subjHead {
+
+font-size: 200%;
+
+}
+
+.sectionSubHead {
+
+font-size: 150%;
+
+}
