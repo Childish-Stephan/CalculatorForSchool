@@ -70,12 +70,12 @@ function quadraticFormula () {
     document.getElementById("answerNegativeQuadratic").innerText = roundedNegative;
 
     if (roundedNegative <= -1 && roundedPositive >-1) {
-    document.getElementById("answerConclusionQuadratic").innerText = "(x + " + -1 * (roundedNegative) + ")(x - " + (roundedPositive) + ")"   ;
+    document.getElementById("answerConclusionQuadratic").innerText = "(x + " + -1 * (Number(roundedNegative)) + ")(x - " + (roundedPositive) + ")"   ;
     }
 
     else
     if (roundedPositive <= -1 && roundedNegative >-1) {
-    document.getElementById("answerConclusionQuadratic").innerText = "(x - " + (roundedNegative) + ")(x + " + -1 * (roundedPositive) + ")"   ;
+    document.getElementById("answerConclusionQuadratic").innerText = "(x - " + (roundedNegative) + ")(x + " + -1 * (Number(roundedPositive)) + ")"   ;
         }
 
     else{
