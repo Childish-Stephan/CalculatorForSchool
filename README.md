@@ -1,5 +1,5 @@
 # CalculatorForSchool (WIP)
-a calculator made in JavaScript that consists of many smaller calculators for specific subjects. <a href="https://childish-stephan.github.io/CalculatorForSchool/"> 
+a calculator made in JavaScript that consists of many smaller calculators for specific subjects. <p> <a href="https://childish-stephan.github.io/CalculatorForSchool/"> Calculator</p>
 
 # FAQ
 **Q: Why did I make this?** <br> <br>
