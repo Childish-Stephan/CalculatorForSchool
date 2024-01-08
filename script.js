@@ -2,7 +2,7 @@
 function centiToFeetConverter (valNum) {
     let result = (valNum * 0.394)/12; // calculates the result as feets
     roundedResult = result.toFixed(1); // rounds up or down the results
-    document.getElementById("outputFeets").innerHTML = roundedResult;
+    document.getElementById("outputFeets").innerText = roundedResult;
 }
 // Force
 function forceBesidesNinetyDegrees() {
@@ -12,7 +12,7 @@ function forceBesidesNinetyDegrees() {
     var firstResult = [(((Math.pow(Number(fOne), 2)) + (Math.pow(Number(fTwo), 2))) + (2 * Number(fOne) * Number(fTwo) * Math.cos(Number(cosDegrees)* Math.PI / 180)))];
     var finalResult = Math.sqrt(firstResult);
     roundedResult = finalResult.toFixed(2);
-    document.getElementById("forceBesidesNinetyDegreesAnswer").innerHTML = roundedResult;
+    document.getElementById("forceBesidesNinetyDegreesAnswer").innerText = roundedResult;
 }
 
 function perpendicularForce() {
@@ -21,7 +21,7 @@ function perpendicularForce() {
     var firstResult = Math.pow(Number(forceOnePerpendicular), 2) + Math.pow(Number(forceTwoPerpendicular), 2);
     var finalResult = Math.sqrt(firstResult);
     roundedResult = finalResult.toFixed(2);
-    document.getElementById("forcePerpendicularAnswer").innerHTML = roundedResult;
+    document.getElementById("forcePerpendicularAnswer").innerText = roundedResult;
 }
 
 // Electricity
@@ -49,10 +49,10 @@ function electricalCost() {
     roundedResultMonth = costMonth.toFixed(2);
     roundedResultYear = costYear.toFixed(2);
 
-    document.getElementById("costIfTimeIsHour").innerHTML = roundedResultHour;
-    document.getElementById("costIfTimeIsDay").innerHTML = roundedResultDay
-    document.getElementById("costIfTimeIsMonth").innerHTML = roundedResultMonth;
-    document.getElementById("costIfTimeIsYear").innerHTML = roundedResultYear;
+    document.getElementById("costIfTimeIsHour").innerText = roundedResultHour;
+    document.getElementById("costIfTimeIsDay").innerText = roundedResultDay
+    document.getElementById("costIfTimeIsMonth").innerText = roundedResultMonth;
+    document.getElementById("costIfTimeIsYear").innerText = roundedResultYear;
 }
 
 //Quadratic formula
@@ -66,26 +66,26 @@ function quadraticFormula () {
     roundedPositive = resultPositive.toFixed(0);
     roundedNegative = resultNegative.toFixed(0);
 
-    document.getElementById("answerPositiveQuadratic").innerHTML = roundedPositive;
-    document.getElementById("answerNegativeQuadratic").innerHTML = roundedNegative;
+    document.getElementById("answerPositiveQuadratic").innerText = roundedPositive;
+    document.getElementById("answerNegativeQuadratic").innerText = roundedNegative;
 
     if (roundedNegative <= -1 && roundedPositive >-1) {
-    document.getElementById("answerConclusionQuadratic").innerHTML = "(x + " + -1 * (roundedNegative) + ")(x - " + (roundedPositive) + ")"   ;
+    document.getElementById("answerConclusionQuadratic").innerText = "(x + " + -1 * (roundedNegative) + ")(x - " + (roundedPositive) + ")"   ;
     }
 
     else
     if (roundedPositive <= -1 && roundedNegative >-1) {
-    document.getElementById("answerConclusionQuadratic").innerHTML = "(x - " + (roundedNegative) + ")(x + " + -1 * (roundedPositive) + ")"   ;
+    document.getElementById("answerConclusionQuadratic").innerText = "(x - " + (roundedNegative) + ")(x + " + -1 * (roundedPositive) + ")"   ;
         }
 
     else{
     if (roundedNegative <= -1 && roundedPositive <= -1) {
-    document.getElementById("answerConclusionQuadratic").innerHTML = "(x + " + (roundedNegative) + ")(x + " + (roundedPositive) + ")"   ;
+    document.getElementById("answerConclusionQuadratic").innerText = "(x + " + (roundedNegative) + ")(x + " + (roundedPositive) + ")"   ;
             }
     }
 
     if (roundedNegative > -1 && roundedPositive > -1) {
-    document.getElementById("answerConclusionQuadratic").innerHTML = "(x - " + (roundedNegative) + ")(x - " + (roundedPositive) + ")"   ;
+    document.getElementById("answerConclusionQuadratic").innerText = "(x - " + (roundedNegative) + ")(x - " + (roundedPositive) + ")"   ;
     }
     
 
