@@ -75,7 +75,7 @@ function quadraticFormula () {
 
     else
     if (roundedPositive <= -1 && roundedNegative >-1) {
-    document.getElementById("answerConclusionQuadratic").innerText = "(x - " + (roundedNegative) + ")(x + " + -1 * (Number(roundedPositive)) + ")"   ;
+    document.getElementById("answerConclusionQuadratic").innerText = "(x + " + -1 * (roundedNegative) + ")(x - " + (Number(roundedPositive)) + ")"   ;
         }
 
     else{
