@@ -80,7 +80,7 @@ function quadraticFormula () {
 
     else{
     if (roundedNegative <= -1 && roundedPositive <= -1) {
-    document.getElementById("answerConclusionQuadratic").innerText = "(x + " + (roundedNegative) + ")(x + " + (roundedPositive) + ")"   ;
+    document.getElementById("answerConclusionQuadratic").innerText = "(x + " + -1 * (roundedNegative) + ")(x + " + -1 * (roundedPositive) + ")"   ;
             }
     }
 
