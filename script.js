@@ -69,22 +69,22 @@ function quadraticFormula () {
     document.getElementById("answerPositiveQuadratic").innerText = roundedPositive;
     document.getElementById("answerNegativeQuadratic").innerText = roundedNegative;
 
-    if (roundedNegative <= -1 && roundedPositive >-1) {
+    if (roundedNegative <= 0 && roundedPositive > 0) {
     document.getElementById("answerConclusionQuadratic").innerText = "(x + " + -1 * (Number(roundedNegative)) + ")(x - " + (roundedPositive) + ")"   ;
     }
 
     else
-    if (roundedPositive <= -1 && roundedNegative >-1) {
+    if (roundedPositive <= 0 && roundedNegative > 0) {
     document.getElementById("answerConclusionQuadratic").innerText = "(x + " + -1 * (roundedNegative) + ")(x - " + (Number(roundedPositive)) + ")"   ;
         }
 
     else{
-    if (roundedNegative <= -1 && roundedPositive <= -1) {
+    if (roundedNegative <= 0 && roundedPositive <= 0) {
     document.getElementById("answerConclusionQuadratic").innerText = "(x + " + -1 * (roundedNegative) + ")(x + " + -1 * (roundedPositive) + ")"   ;
             }
     }
 
-    if (roundedNegative > -1 && roundedPositive > -1) {
+    if (roundedNegative > 0 && roundedPositive > 0) {
     document.getElementById("answerConclusionQuadratic").innerText = "(x - " + (roundedNegative) + ")(x - " + (roundedPositive) + ")"   ;
     }
     
