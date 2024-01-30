@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator(s)</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+
+    <script src="conversion.js"></script>
+    <script src="physics.js"></script>
+    <script src="math.js"></script>
 
 </head>
 <body>
@@ -16,63 +19,15 @@
     <h3><b> made by Yuth Virakboth </h3></b>
 
  </div>
-<button href="physics.html"><h2 class = "subjHead"> Physics </h2></button> 
 
-<div>
-     <h3 class= "sectionSubHead"> <b> Convertion </b> </h3> 
-        <p>Centimeter: <input type ="number" oninput = "centiToFeetConverter(this.value)" onchange= "centiToFeetConverter(this.value)"> cm </p>
-        <p>Feets: <span id="outputFeets"> </span> </p> 
-</div>
+ <div class = subjHead> 
 
-<div>
-     <h3 class= "sectionSubHead"> <b> Force </b> </h3>
+    <a href ="physics.html"> Physics  </a> <br>
+    <a href ="math.html"> Math  </a>
+ 
+</div> 
 
 
-         <p>when cos = 90 degrees:</p>
-            <p>F<sub>1</sub>: <input type ="number" id= "forceOnePerpendicular" oninput = "perpendicularForce(this.value)" onchange= "perpendicularForce(this.value)"> Newtons </p>
-            <p>F<sub>2</sub>: <input type ="number" id ="forceTwoPerpendicular" oninput = "perpendicularForce(this.value)" onchange= "perpendicularForce(this.value)"> Newtons </p>
-            <p>F: <span id="forcePerpendicularAnswer"> </span></p>
-       
-       
-        <p>when cos ≠ 90:</p>
-            <p>F<sub>1</sub>: <input type ="number" id= "fOne" oninput = "forceBesidesNinetyDegrees(this.value)" onchange= "forceBesidesNinetyDegrees(this.value)"> Newtons </p>
-            <p>F<sub>2</sub>: <input type ="number" id ="fTwo" oninput = "forceBesidesNinetyDegrees(this.value)" onchange= "forceBesidesNinetyDegrees(this.value)"> Newtons </p>
-            <p>Cosθ: <input type ="number" id ="cosDegrees" oninput = "forceBesidesNinetyDegrees(this.value)" onchange= "forceBesidesNinetyDegrees(this.value)"> Degrees </p>
-            <p>F: <span id="forceBesidesNinetyDegreesAnswer"> </span></p>
-</div>
-
-<div>
-     <h3 class= "sectionSubHead"> <b> Electricity </b> </h3>
-        <p>Electrical cost:</p>
-            <p>Power (W): <input type ="number" id= "powerElectricalCost" oninput = "electricalCost(this.value)" onchange= "electricalCost(this.value)"> Watts </p>
-            <p>Price per KWH: <input type ="number" id ="pricePerKWhElectricalCost" oninput = "electricalCost(this.value)" onchange= "electricalCost(this.value)"></p>
-           
-            <p>Amount of Time (Hours): <input type ="number" id ="amountOfHourElectricalCost" oninput = "electricalCost(this.value)" onchange= "electricalCost(this.value)">Hours</p>
-            <p>Amount of Time (Days): <input type ="number" id ="amountOfDayElectricalCost" oninput = "electricalCost(this.value)" onchange= "electricalCost(this.value)">Days</p>
-            <p>Amount of Time (Months): <input type ="number" id ="amountOfMonthElectricalCost" oninput = "electricalCost(this.value)" onchange= "electricalCost(this.value)">Months</p>
-            <p>Amount of Time (Years): <input type ="number" id ="amountOfYearElectricalCost" oninput = "electricalCost(this.value)" onchange= "electricalCost(this.value)">Years</p>
-            <hr>
-            <p>Cost (per Hours): <span id="costIfTimeIsHour"> </span></p>
-            <p>Cost (per Days): <span id="costIfTimeIsDay"> </span></p>
-            <p>Cost (per Months): <span id="costIfTimeIsMonth"> </span></p>
-            <p>Cost (per Years): <span id="costIfTimeIsYear"> </span></p>
-
-
-</div>
-
-<div>
-
-    <h3 class= "sectionSubHead"> <b> Quadratic Formula </b> </h3>
-        <p>a: <input type ="number" id= "aQuadratic" oninput = "quadraticFormula(this.value)" onchange= "quadraticFormula(this.value)"></p>
-        <p>b: <input type ="number" id= "bQuadratic" oninput = "quadraticFormula(this.value)" onchange= "quadraticFormula(this.value)"></p>
-        <p>c: <input type ="number" id= "cQuadratic" oninput = "quadraticFormula(this.value)" onchange= "quadraticFormula(this.value)"></p>
-        <p>result (positive): x = <span id="answerPositiveQuadratic"> </span></p>
-        <p>result (negative): x = <span id="answerNegativeQuadratic"> </span></p>
-        <p>So, the answer is: <span id="answerConclusionQuadratic"> </span></p>
-
-
-
-</div>
 
 </body>
 </html>
