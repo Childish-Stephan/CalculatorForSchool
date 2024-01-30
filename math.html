@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math</title>
+    <script src="math.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class = "mainDiv">
+
+         <h1><b><u> Calculator(s) </h1></b></u>
+         <h3><b> made by Yuth Virakboth </h3></b>
+    
+    </div>
+
+    <div class="subjHead">
+
+         <a href ="index.html"> Home  </a> <br>
+         <a href ="physics.html"> Physics  </a>
+    
+    </div>
+
+    <div>
+
+        <h3 class= "sectionSubHead"> <b> Quadratic Formula </b> </h3>
+   
+           <p>a: <input type ="number" id= "aQuadratic" oninput = "quadraticFormula(this.value)" onchange= "quadraticFormula(this.value)"></p>
+           <p>b: <input type ="number" id= "bQuadratic" oninput = "quadraticFormula(this.value)" onchange= "quadraticFormula(this.value)"></p>
+           <p>c: <input type ="number" id= "cQuadratic" oninput = "quadraticFormula(this.value)" onchange= "quadraticFormula(this.value)"></p>
+           
+           <p>result (positive): x = <span id="answerPositiveQuadratic"> </span></p>
+           <p>result (negative): x = <span id="answerNegativeQuadratic"> </span></p>
+           
+           <p>So, the answer is: <span id="answerConclusionQuadratic"> </span></p>
+   
+   </div>
+
+   <div>
+        <h3 class= "sectionSubHead"> <b> Trigonmetry </b> </h3>
+
+           <p>angle for tan: <input type ="number" id= "tanDeg" oninput = "trigonometry(this.value)" onchange= "trigonometry(this.value)"></p>
+           <p>angle for cos: <input type ="number" id= "cosDeg" oninput = "trigonometry(this.value)" onchange= "trigonometry(this.value)"></p>
+           <p>angle for sin: <input type ="number" id= "sinDeg" oninput = "trigonometry(this.value)" onchange= "trigonometry(this.value)"></p>
+
+           <p>answer for tan: <span id="tanDegResult"></span></p>
+           <p>answer for cos: <span id="cosDegResult"></span></p>
+           <p>answer for sin: <span id="sinDegResult"></span></p>
+
+   </div>
+</body>
+</html>
